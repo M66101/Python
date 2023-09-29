@@ -1,0 +1,24 @@
+print("Lets play rock paper siccsors")
+userChoice=int(input("Enter rock paper siccsors"))
+rock=1 
+paper=2
+siccsors=3
+import random
+compChoice=int(random.randint(1,3))
+if userChoice==compChoice:
+    print("You have drawn")
+elif userChoice==rock:
+    if compChoice==paper:
+        print("You loose")
+    else:
+        print("You Win")
+elif userChoice==paper:
+    if compChoice==siccsors:
+        print("You loose")
+    else:
+        print("You win")
+elif userChoice==siccsors:
+    if compChoice==rock:
+        print("You loose")
+    else:
+        print("You win")
